@@ -1,7 +1,7 @@
 // Gulp Vars
 var gulp               	 = require('gulp'),
 	babel									 = require('gulp-babel'),
-	siteName               = 'ReadyToRumble',
+	siteName               = 'tomtempelaere',
 	// Include plugins
 	plugins                = require('gulp-load-plugins')(), // tous les plugins de package.json
 	// Images
@@ -16,8 +16,8 @@ var paths = {
 		theme: themePath,
 		ignoreTheme: ignoreThemePath,
 		pluginsFiles: './wp-content/plugins',
-		imagesCompiled: themePath + '/assets/images',
-		imagesSource: themePath + '/assets/images_src',
+		imagesCompiled: themePath + '/assets/img',
+		imagesSource: themePath + '/assets/img',
 		js: themePath + '/assets/js',
 		jsCompiled: themePath + '/assets/js/compiled',
 		css: themePath + '/assets/css'
@@ -27,8 +27,8 @@ var paths = {
 		themePath + '/*.min.css'
 	],
 	cssMain: 'wp-content/themes/' + siteName + '/style.min.css',
-	sass: themePath + '/assets/css/sass/**/*.scss',
-	sassMain: themePath + '/assets/css/sass/main.scss',
+	sass: themePath + '/assets/sass/**/*.scss',
+	sassMain: themePath + '/assets/sass/main.scss',
 	php: [
 		'./wp-config.php',
 		'./.htaccess',
@@ -41,8 +41,8 @@ var paths = {
 		themePath + '/languages/*.php'
 	],
 	images: [
-		themePath + '/assets/images/*',
-		themePath + '/assets/images_src/*'
+		themePath + '/assets/img/*',
+		themePath + '/assets/img/*'
 	],
 	js: [
 		themePath + '/assets/js/*.js',

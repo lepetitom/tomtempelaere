@@ -1,0 +1,13 @@
+node_modules/
+.sublime-gulp\.cache
+package-lock\.json
+
+wp-content/plugins/wordpress-seo/vendor/yoast/license-manager/composer\.json
+
+ftpsync\.settings
+
+sublime-gulp\.log
+
+wp-content/themes/ReadyToRumble/\.DS_Store
+
+.DS_Store
