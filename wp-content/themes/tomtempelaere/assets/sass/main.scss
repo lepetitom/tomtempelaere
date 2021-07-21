@@ -1,0 +1,24 @@
+/*
+Theme Name: My theme
+Theme URI: http://tomtempelaere.fr/
+Author: Tempelaere Tom
+Author URI: http://tomtempelaere.fr/
+Description: Theme personnalisé
+Version: 1.0
+*/
+
+@import "basics/_reset.scss";
+@import "basics/_vars.scss";
+@import "basics/_mixins.scss";
+@import "basics/_fonts.scss";
+@import "basics/_plugins.scss";
+@import "basics/_default.scss";
+@import "basics/_layout.scss";
+@import "basics/_animate.scss";
+
+@import "components/*.scss";
+@import "templates/*.scss";
+// @import "responsive/_desktop.scss";
+// @import "responsive/_tablette_paysage.scss";
+// @import "responsive/_tablette_portrait.scss";
+// @import "responsive/_mobile.scss";
