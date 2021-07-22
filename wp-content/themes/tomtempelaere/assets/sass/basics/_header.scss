@@ -1,0 +1,57 @@
+
+header {
+    height: 80px;
+    display: flex !important;
+    align-items: center;
+    box-shadow: 0 3px 6px #00000009;
+    padding: 0 20px !important;
+    .container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .logo {
+            background-image: url('assets/img/gradient-background.jpg');
+            background-position: center;
+            height: 47px;
+            width: 47px;
+            border-radius: 9px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: $white;
+            font-family: 'Source Code Pro', monospace;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        nav {
+            display: flex;
+            align-items: center;
+            ul {
+                display: flex;
+                li {
+                    margin-left: 80px;
+                    a {
+                        @include boldGreyFont
+                    }
+                }
+            }
+        }
+        .second-menu-btn {
+            height: 30px;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+            .line {
+                display: flex;
+                justify-content: space-between;
+                width: 30px;
+                .point {
+                    background-color: $grey ;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 2px;
+                }
+            }
+        }
+    }
+}

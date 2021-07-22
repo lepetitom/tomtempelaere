@@ -15,6 +15,7 @@ Version: 1.0
 @import "basics/_default.scss";
 @import "basics/_animate.scss";
 
+@import "basics/*.scss";
 @import "components/*.scss";
 @import "templates/*.scss";
 // @import "responsive/_desktop.scss";

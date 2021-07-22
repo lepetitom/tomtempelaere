@@ -1,0 +1,6 @@
+@mixin boldGreyFont {
+    font-size: 20px;
+    color: $grey;
+    font-weight: 700;
+    font-family: 'Source Code Pro', monospace;
+}

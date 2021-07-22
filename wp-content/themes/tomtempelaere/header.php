@@ -21,18 +21,39 @@
 <body <?php body_class(); ?> id="body"><!-- body -->
 
     <div id="page" class="hfeed"><!-- #page -->
-
         <header>
-            <nav id="navigation">
-            <?php
-                wp_nav_menu(
-                array(
-                    'theme_location' => 'main-menu',
-                    'menu_id' => 'primary-menu',
-                )
-                );
-            ?>
-            </nav>
+            <div class="container">
+                <div class="logo">
+                    <p>T</p>
+                </div>
+                <nav id="navigation">
+                <?php
+                    wp_nav_menu(
+                    array(
+                        'theme_location' => 'main-menu',
+                        'menu_id' => 'primary-menu',
+                    )
+                    );
+                ?>
+                </nav>
+                <!-- <div class="second-menu-btn">
+                    <div class="line">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                    <div class="line">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                    <div class="line">
+                        <div class="point"></div>
+                        <div class="point"></div>
+                        <div class="point"></div>
+                    </div>
+                </div>-->
+            </div>
         </header>
 
         <div id="main" class="page-<?php the_ID() ?>">
