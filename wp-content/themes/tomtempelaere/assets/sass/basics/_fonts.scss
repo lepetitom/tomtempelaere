@@ -1,2 +1,51 @@
 // Source code pro
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700;900&display=swap');
+
+
+h1 {
+    font-family: $font !important;
+    font-weight: 900 !important;
+}
+.bigtitle {
+    background-image: url('assets/img/gradient-background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent !important;
+    h1 {
+        font-size: 170px;
+        @media screen and (max-width: $desktop) {
+                font-size: 130px; 
+        }
+        @media screen and (max-width: $tablet_portrait) {
+                font-size: 100px; 
+        }
+        @media screen and (max-width: $mobile) {
+                font-size: 50px; 
+        }
+    }
+}
+.secondbigtitle {
+    h1 {
+        font-weight: 300 !important;
+        font-size: 80px;
+        color: $grey;
+        @media screen and (max-width: $desktop) {
+            font-size: 55px ; 
+        }
+        @media screen and (max-width: $tablet_portrait) {
+            font-size: 40px !important;
+        }
+    }
+}
+
+p {
+    font-family: $font !important;
+    font-size: 17px !important;
+    color: $grey;
+    line-height: 22px !important;
+    @media screen and (max-width: $tablet_portrait) {
+        font-size: 14px !important;
+    }
+}

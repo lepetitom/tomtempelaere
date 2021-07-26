@@ -1,0 +1,30 @@
+.page-accueil {
+    .container {
+        .homepres {
+            height: calc(100vh - 80px);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+            @media screen and (max-width: $tablet_portrait) {
+                justify-content: flex-start;
+            }
+        }
+        .bigtitle {
+            @media screen and (max-width: $tablet_portrait) {
+                margin-top: 100px;
+            }
+            @media screen and (max-height: 660px) {
+                margin-top: 30px;
+            }
+        }
+        .introduction {
+            margin-top: -50px;
+            display: flex;
+            justify-content: flex-end;
+            @media screen and (max-width: $tablet_portrait) {
+                margin-top: 30px;
+            }
+        }
+    }
+}

@@ -1,3 +1,6 @@
+#main {
+    margin: 0 20px;
+}
 .container {
     max-width: 1376px;
     position: relative;
@@ -8,4 +11,83 @@ a {
     &:hover {
         text-decoration: underline;
     }
+}
+
+// Ligne du fond
+.table-compenant {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: -1;
+    .line {
+        height: 100%;
+        width: 1px;
+        background-color: $lightGrey;
+    }
+    @media screen and (max-width: $desktop) {
+        .line:last-child {
+            display: none;
+        }
+    }
+    @media screen and (max-width: $tablet_portrait) {
+        .line:nth-child(5) {
+            display: none;
+        }
+    }
+}
+
+// column
+.col-1 {
+    width: 20%;
+    max-width: 20%;
+    @media screen and (max-width: $desktop) {
+        width: 25%;
+        max-width: 25%;
+    }
+    @media screen and (max-width: $tablet_portrait) {
+        width: 33.33%;
+        max-width: 33.33%;
+    }
+}
+.col-2 {
+    width: 40%;
+    max-width: 40%;
+    @media screen and (max-width: $desktop) {
+        width: 50%;
+        max-width: 50%;
+    }
+    @media screen and (max-width: $tablet_portrait) {
+        width: 66.66%;
+        max-width: 66.66%;
+    }
+}
+.col-3 {
+    width: 60%;
+    max-width: 60%;
+    @media screen and (max-width: $desktop) {
+        width: 75%;
+        max-width: 75%;
+    }
+    @media screen and (max-width: $tablet_portrait) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.col-4 {
+    width: 80%;
+    max-width: 80%;
+    @media screen and (max-width: $desktop) {
+        width: 100%;
+        max-width: 100%;
+    }
+    @media screen and (max-width: $tablet_portrait) {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+.col-5, .col-full {
+    width: 100%;
+    max-width: 100%;
 }

@@ -21,12 +21,13 @@
 <body <?php body_class(); ?> id="body"><!-- body -->
 
     <div id="page" class="hfeed"><!-- #page -->
-        <header>
+        <header id='menuBurger'>
             <div class="container">
                 <div class="logo">
                     <p>T</p>
                 </div>
-                <nav id="navigation">
+                <!-- Main Menu -->
+                <nav class="desk-header" id="navigation">
                 <?php
                     wp_nav_menu(
                     array(
@@ -36,6 +37,11 @@
                     );
                 ?>
                 </nav>
+                <!-- Mobile Menu -->
+                <div class="burger-btn" id='burgerButton' onclick="switchToBurger()">
+                    <div></div>
+                    <div></div>
+                </div>
                 <!-- <div class="second-menu-btn">
                     <div class="line">
                         <div class="point"></div>
@@ -53,6 +59,20 @@
                         <div class="point"></div>
                     </div>
                 </div>-->
+            </div>
+            <div class="menu-burger">
+                <div class="container">
+                    <nav class="mobile-header" id="navigation">
+                    <?php
+                        wp_nav_menu(
+                        array(
+                            'theme_location' => 'main-menu',
+                            'menu_id' => 'primary-menu',
+                        )
+                        );
+                    ?>
+                    </nav>
+                </div>
             </div>
         </header>
 

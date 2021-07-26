@@ -18,6 +18,7 @@
     // I2 Appel styles & scripts
 	wp_enqueue_style('css', theme_url.'/style.css'); // CSS
     wp_enqueue_style('css-min', theme_url.'/style.min.css'); // CSS mim
+    wp_enqueue_script('js', theme_url.'/assets/js/menu.js'); // JS
 
 
     // -----

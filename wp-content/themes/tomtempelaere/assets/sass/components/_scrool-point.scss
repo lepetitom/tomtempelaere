@@ -1,0 +1,55 @@
+.scroll-point {
+    margin: 0 auto;
+    width: 25px;
+    position: absolute;
+    bottom: 100px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition-duration: 0.2s;
+    @media screen and (max-height: 660px) {
+        bottom: 50px;
+    }
+    .mouse {
+        margin: 0 auto;
+        background-color: $scdLightGrey;
+        height: 45px;
+        border-radius: 100px;
+        box-shadow: #0000002c 0px 3px 6px;
+        display: flex;
+        justify-content: center;
+        .point {
+            height: 6px;
+            width: 6px;
+            border-radius: 100px;
+            background-color: $grey;
+            margin-top: 10px;
+        }
+    }
+    .arrow {
+        position: relative;
+        width: 100%;
+        margin-top: 6px;
+        transition-duration: 0.2s;
+        .line{
+            width: 14px;
+            height: 1px;
+            border-radius: 100px;
+            background-color: $grey;
+            transform: rotate(35deg);
+            position: absolute;
+            &:last-child {
+                transform: rotate(-35deg);
+                right: 0px;
+            }
+        }
+    }
+    &:hover {
+        bottom: 90px;
+        transition-duration: 0.2s;
+        .arrow {
+            margin-top: 10px;
+            transition-duration: 0.2s;
+        }
+    }  
+}

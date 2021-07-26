@@ -11,8 +11,8 @@ Version: 1.0
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200;300;400;700;900&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -56,6 +56,52 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+h1 {
+  font-family: "Source Code Pro", monospace !important;
+  font-weight: 900 !important; }
+
+.bigtitle {
+  background-image: url("assets/img/gradient-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important; }
+  .bigtitle h1 {
+    font-size: 170px; }
+    @media screen and (max-width: 1220px) {
+      .bigtitle h1 {
+        font-size: 130px; } }
+    @media screen and (max-width: 769px) {
+      .bigtitle h1 {
+        font-size: 100px; } }
+    @media screen and (max-width: 600px) {
+      .bigtitle h1 {
+        font-size: 50px; } }
+
+.secondbigtitle h1 {
+  font-weight: 300 !important;
+  font-size: 80px;
+  color: #9F979F; }
+  @media screen and (max-width: 1220px) {
+    .secondbigtitle h1 {
+      font-size: 55px; } }
+  @media screen and (max-width: 769px) {
+    .secondbigtitle h1 {
+      font-size: 40px !important; } }
+
+p {
+  font-family: "Source Code Pro", monospace !important;
+  font-size: 17px !important;
+  color: #9F979F;
+  line-height: 22px !important; }
+  @media screen and (max-width: 769px) {
+    p {
+      font-size: 14px !important; } }
+
+#main {
+  margin: 0 20px; }
+
 .container {
   max-width: 1376px;
   position: relative;
@@ -66,6 +112,79 @@ a {
   a:hover {
     text-decoration: underline; }
 
+.table-compenant {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .table-compenant .line {
+    height: 100%;
+    width: 1px;
+    background-color: #E4E4E4; }
+  @media screen and (max-width: 1220px) {
+    .table-compenant .line:last-child {
+      display: none; } }
+  @media screen and (max-width: 769px) {
+    .table-compenant .line:nth-child(5) {
+      display: none; } }
+
+.col-1 {
+  width: 20%;
+  max-width: 20%; }
+  @media screen and (max-width: 1220px) {
+    .col-1 {
+      width: 25%;
+      max-width: 25%; } }
+  @media screen and (max-width: 769px) {
+    .col-1 {
+      width: 33.33%;
+      max-width: 33.33%; } }
+
+.col-2 {
+  width: 40%;
+  max-width: 40%; }
+  @media screen and (max-width: 1220px) {
+    .col-2 {
+      width: 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 769px) {
+    .col-2 {
+      width: 66.66%;
+      max-width: 66.66%; } }
+
+.col-3 {
+  width: 60%;
+  max-width: 60%; }
+  @media screen and (max-width: 1220px) {
+    .col-3 {
+      width: 75%;
+      max-width: 75%; } }
+  @media screen and (max-width: 769px) {
+    .col-3 {
+      width: 100%;
+      max-width: 100%; } }
+
+.col-4 {
+  width: 80%;
+  max-width: 80%; }
+  @media screen and (max-width: 1220px) {
+    .col-4 {
+      width: 100%;
+      max-width: 100%; } }
+  @media screen and (max-width: 769px) {
+    .col-4 {
+      width: 100%;
+      max-width: 100%; } }
+
+.col-5, .col-full {
+  width: 100%;
+  max-width: 100%; }
+
+#main {
+  margin: 0 20px; }
+
 .container {
   max-width: 1376px;
   position: relative;
@@ -75,17 +194,135 @@ a {
   text-decoration: none; }
   a:hover {
     text-decoration: underline; }
+
+.table-compenant {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: -1; }
+  .table-compenant .line {
+    height: 100%;
+    width: 1px;
+    background-color: #E4E4E4; }
+  @media screen and (max-width: 1220px) {
+    .table-compenant .line:last-child {
+      display: none; } }
+  @media screen and (max-width: 769px) {
+    .table-compenant .line:nth-child(5) {
+      display: none; } }
+
+.col-1 {
+  width: 20%;
+  max-width: 20%; }
+  @media screen and (max-width: 1220px) {
+    .col-1 {
+      width: 25%;
+      max-width: 25%; } }
+  @media screen and (max-width: 769px) {
+    .col-1 {
+      width: 33.33%;
+      max-width: 33.33%; } }
+
+.col-2 {
+  width: 40%;
+  max-width: 40%; }
+  @media screen and (max-width: 1220px) {
+    .col-2 {
+      width: 50%;
+      max-width: 50%; } }
+  @media screen and (max-width: 769px) {
+    .col-2 {
+      width: 66.66%;
+      max-width: 66.66%; } }
+
+.col-3 {
+  width: 60%;
+  max-width: 60%; }
+  @media screen and (max-width: 1220px) {
+    .col-3 {
+      width: 75%;
+      max-width: 75%; } }
+  @media screen and (max-width: 769px) {
+    .col-3 {
+      width: 100%;
+      max-width: 100%; } }
+
+.col-4 {
+  width: 80%;
+  max-width: 80%; }
+  @media screen and (max-width: 1220px) {
+    .col-4 {
+      width: 100%;
+      max-width: 100%; } }
+  @media screen and (max-width: 769px) {
+    .col-4 {
+      width: 100%;
+      max-width: 100%; } }
+
+.col-5, .col-full {
+  width: 100%;
+  max-width: 100%; }
+
+h1 {
+  font-family: "Source Code Pro", monospace !important;
+  font-weight: 900 !important; }
+
+.bigtitle {
+  background-image: url("assets/img/gradient-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent !important; }
+  .bigtitle h1 {
+    font-size: 170px; }
+    @media screen and (max-width: 1220px) {
+      .bigtitle h1 {
+        font-size: 130px; } }
+    @media screen and (max-width: 769px) {
+      .bigtitle h1 {
+        font-size: 100px; } }
+    @media screen and (max-width: 600px) {
+      .bigtitle h1 {
+        font-size: 50px; } }
+
+.secondbigtitle h1 {
+  font-weight: 300 !important;
+  font-size: 80px;
+  color: #9F979F; }
+  @media screen and (max-width: 1220px) {
+    .secondbigtitle h1 {
+      font-size: 55px; } }
+  @media screen and (max-width: 769px) {
+    .secondbigtitle h1 {
+      font-size: 40px !important; } }
+
+p {
+  font-family: "Source Code Pro", monospace !important;
+  font-size: 17px !important;
+  color: #9F979F;
+  line-height: 22px !important; }
+  @media screen and (max-width: 769px) {
+    p {
+      font-size: 14px !important; } }
 
 header {
-  height: 80px;
   display: flex !important;
-  align-items: center;
   box-shadow: 0 3px 6px #00000009;
-  padding: 0 20px !important; }
+  padding: 0 20px !important;
+  flex-wrap: wrap;
+  height: 80px;
+  max-height: 80px;
+  transition-duration: 0.85s;
+  overflow: hidden; }
   header .container {
     display: flex;
     width: 100%;
-    justify-content: space-between; }
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; }
     header .container .logo {
       background-image: url("assets/img/gradient-background.jpg");
       background-position: center;
@@ -96,9 +333,11 @@ header {
       justify-content: center;
       align-items: center;
       color: #fff;
-      font-family: 'Source Code Pro', monospace;
+      font-family: "Source Code Pro", monospace;
       font-weight: 900;
       font-size: 20px; }
+      header .container .logo p {
+        color: #fff; }
     header .container nav {
       display: flex;
       align-items: center; }
@@ -111,6 +350,31 @@ header {
             color: #9F979F;
             font-weight: 700;
             font-family: 'Source Code Pro', monospace; }
+    @media screen and (max-width: 980px) {
+      header .container .desk-header {
+        display: none; } }
+    header .container .burger-btn {
+      height: 40px;
+      transition-duration: 0.5s;
+      position: relative; }
+      @media screen and (min-width: 980px) {
+        header .container .burger-btn {
+          display: none; } }
+      header .container .burger-btn div {
+        background-color: #9F979F;
+        border-radius: 50px;
+        height: 5px;
+        transition-duration: 0.5s; }
+        header .container .burger-btn div:first-child {
+          width: 50px !important;
+          position: absolute;
+          right: 0px;
+          top: 33.33%; }
+        header .container .burger-btn div:last-child {
+          width: 30px;
+          position: absolute;
+          right: 0px;
+          top: 66.66%; }
     header .container .second-menu-btn {
       height: 30px;
       display: flex;
@@ -125,6 +389,47 @@ header {
           width: 6px;
           height: 6px;
           border-radius: 2px; }
+  header .menu-burger {
+    width: 100%;
+    height: 100vh;
+    top: 0px;
+    padding-top: 100px;
+    display: none;
+    position: relative; }
+    header .menu-burger .container {
+      justify-content: flex-end !important; }
+      header .menu-burger .container .mobile-header .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; }
+        header .menu-burger .container .mobile-header .menu li {
+          margin-bottom: 40px; }
+
+.active {
+  height: 100vh;
+  max-height: 100vh;
+  transition-duration: 0.85s; }
+  .active .container .burger-btn {
+    height: 40px;
+    transition-duration: 0.5s; }
+    @media screen and (min-width: 980px) {
+      .active .container .burger-btn {
+        display: none; } }
+    .active .container .burger-btn div {
+      background-color: #9F979F;
+      border-radius: 50px;
+      height: 5px;
+      transition-duration: 0.5s; }
+      .active .container .burger-btn div:first-child {
+        width: 40px !important;
+        transform: rotate(45deg);
+        top: 50%; }
+      .active .container .burger-btn div:last-child {
+        width: 40px;
+        transform: rotate(-45deg);
+        top: 50%; }
+  .active .menu-burger {
+    display: block; }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -172,3 +477,77 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0; }
+
+.scroll-point {
+  margin: 0 auto;
+  width: 25px;
+  position: absolute;
+  bottom: 100px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition-duration: 0.2s; }
+  @media screen and (max-height: 660px) {
+    .scroll-point {
+      bottom: 50px; } }
+  .scroll-point .mouse {
+    margin: 0 auto;
+    background-color: #F8F4F8;
+    height: 45px;
+    border-radius: 100px;
+    box-shadow: #0000002c 0px 3px 6px;
+    display: flex;
+    justify-content: center; }
+    .scroll-point .mouse .point {
+      height: 6px;
+      width: 6px;
+      border-radius: 100px;
+      background-color: #9F979F;
+      margin-top: 10px; }
+  .scroll-point .arrow {
+    position: relative;
+    width: 100%;
+    margin-top: 6px;
+    transition-duration: 0.2s; }
+    .scroll-point .arrow .line {
+      width: 14px;
+      height: 1px;
+      border-radius: 100px;
+      background-color: #9F979F;
+      transform: rotate(35deg);
+      position: absolute; }
+      .scroll-point .arrow .line:last-child {
+        transform: rotate(-35deg);
+        right: 0px; }
+  .scroll-point:hover {
+    bottom: 90px;
+    transition-duration: 0.2s; }
+    .scroll-point:hover .arrow {
+      margin-top: 10px;
+      transition-duration: 0.2s; }
+
+.page-accueil .container .homepres {
+  height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative; }
+  @media screen and (max-width: 769px) {
+    .page-accueil .container .homepres {
+      justify-content: flex-start; } }
+
+@media screen and (max-width: 769px) {
+  .page-accueil .container .bigtitle {
+    margin-top: 100px; } }
+
+@media screen and (max-height: 660px) {
+  .page-accueil .container .bigtitle {
+    margin-top: 30px; } }
+
+.page-accueil .container .introduction {
+  margin-top: -50px;
+  display: flex;
+  justify-content: flex-end; }
+  @media screen and (max-width: 769px) {
+    .page-accueil .container .introduction {
+      margin-top: 30px; } }

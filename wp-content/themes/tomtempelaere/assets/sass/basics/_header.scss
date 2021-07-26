@@ -1,14 +1,19 @@
 
 header {
-    height: 80px;
     display: flex !important;
-    align-items: center;
     box-shadow: 0 3px 6px #00000009;
     padding: 0 20px !important;
+    flex-wrap: wrap;
+    height: 80px;
+    max-height: 80px;
+    transition-duration: 0.85s;
+    overflow: hidden;
     .container{
         display: flex;
         width: 100%;
         justify-content: space-between;
+        align-items: center;
+        height: 80px;
         .logo {
             background-image: url('assets/img/gradient-background.jpg');
             background-position: center;
@@ -19,9 +24,12 @@ header {
             justify-content: center;
             align-items: center;
             color: $white;
-            font-family: 'Source Code Pro', monospace;
+            font-family: $font;
             font-weight: 900;
             font-size: 20px;
+            p {
+                color: $white;
+            }
         }
         nav {
             display: flex;
@@ -35,6 +43,39 @@ header {
                     }
                 }
             }
+        }
+        .desk-header {
+            @media screen and (max-width: $tablet_container) {
+                display: none;
+            }
+        }
+        .burger-btn {
+            height: 40px;
+            transition-duration: 0.5s;
+            position: relative;
+            
+            @media screen and (min-width: $tablet_container) {
+                display: none;
+            }
+            div {
+                background-color: $grey;
+                border-radius: 50px;
+                height: 5px;
+                transition-duration: 0.5s;
+                &:first-child {
+                    width: 50px !important;
+                    position: absolute;
+                    right: 0px;
+                    top: 33.33%;
+                }
+                &:last-child {
+                    width: 30px;
+                    position: absolute;
+                    right: 0px;
+                    top: 66.66%;
+                }
+            }
+
         }
         .second-menu-btn {
             height: 30px;
@@ -53,5 +94,61 @@ header {
                 }
             }
         }
+    }
+    .menu-burger {
+        width: 100%;
+        height: 100vh;
+        top: 0px;
+        padding-top: 100px;
+        display: none;
+        position: relative;
+        .container {
+            justify-content: flex-end !important;
+            .mobile-header {
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    li {
+                        margin-bottom: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.active {
+    height: 100vh;
+    max-height: 100vh;
+    transition-duration: 0.85s;
+    .container {
+        .burger-btn {
+            height: 40px;
+            @media screen and (min-width: $tablet_container) {
+                display: none;
+            }
+            transition-duration: 0.5s;
+            div {
+                background-color: $grey;
+                border-radius: 50px;
+                height: 5px;
+                transition-duration: 0.5s;
+                &:first-child {
+                    width: 40px !important;
+                    transform: rotate(45deg);
+                    top: 50%;
+                }
+                &:last-child {
+                    width: 40px;
+                    transform: rotate(-45deg);
+                    top: 50%;
+                }
+            }
+    
+        }
+    }
+    .menu-burger{
+        display: block;
     }
 }
